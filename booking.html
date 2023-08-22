@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrarium</title>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap" rel="stylesheet">
+    <!-- css styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1ba811e13a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Mainpage -->
+    <section class="contact" id="banner-book">
+        <img src="images/logo3.png" class="logo">
+            <div class="booking">
+                <h1>Book with us now !</h1>
+                <p>Build your own terrariums with the help of our professionals</p>
+            </div>
+        <div class="book-container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>123 Punggol rd, #03-11 <br> Singapore 820123</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i> </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>TropiqEden@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Contact</h3>
+                        <p>+65-91234567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="date" name="" min="2023-04-16">
+                        <span>Date</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="time" name="" min="10:00" max="1700">
+                        <span>Time</span>
+                    </div>
+                    <div class="inputBox">
+                        <select name="" id="#">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <span>Number of people</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Sidenavbar -->
+    <div id="sidebar">
+        <nav>
+            <h1>TropiqEden</h1>
+            <ul>
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#galler-page">Gallery</a></li>
+                <li><a href="index.html#testimonial">Testimonials</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <hr>
+            <footer class="sidefooter" id="footerside">
+                <div class="container-fluid">
+                  <i class="social-icon fab fa-twitter"></i>
+                  <i class="social-icon fab fa-facebook-f"></i>
+                  <i class="social-icon fab fa-instagram"></i>
+                  <i class="social-icon fas fa-envelope"></i>
+                  <div class="copyright-title">
+                    <div>
+                        <p>© Copyright 2023</p>
+                    </div>
+                     <div>
+                        <p> TropiqEden</p>
+                    </div>
+                 </div>
+                </div>
+              </footer>
+        </nav>
+    </div>
+
+    
+    <div id="menubtn">
+        <img src="/Project/images/hamburger.png">
+    </div>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidebar = document.getElementById("sidebar")
+        var menu = document.getElementById("menu")
+
+        menubtn.onclick = function (){
+            if(sidebar.style.right == "-250px"){
+                sidebar.style.right="0"; 
+                menu.src="/Project/images/x-button.png";                
+            }
+            else{
+                sidebar.style.right= "-250px";
+                menu.src="/Project/images/hamburger.png"; 
+               
+            }
+        }
+    </script>
+
+<!-- footer -->
+<section id="footer">
+    <div class="title-text">
+        <p> Contact Us</p>
+        <h1> Visit us today</h1>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h2>Opening hours</h2>
+                <p><i class="fa-sharp fa-solid fa-clock"></i> Monday to Satuday - 10am to 9pm</p>
+                <p><i class="fa-sharp fa-solid fa-clock"></i> Sunday - 10am-7pm</p>
+            </div>
+            <div class="footer-right">
+                <h2>Get in touch</h2>
+                <p><i class="fa-sharp fa-solid fa-location-dot"> </i>123 Punggol rd, #03-11 Singapore 820123</p>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i>TropiqEden94@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> +65-91234567</p>
+            </div>
+        </div>
+</section>
+
+<div class="social-links">
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-facebook-f"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-envelope"></i>
+    <p>© Copyright 2023 TropiqEden</p>
+</div>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

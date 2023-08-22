@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap" rel="stylesheet">
+    <!-- css styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1ba811e13a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Mainpage -->
+    <section id="shop">
+        <img src="images/logo3.png" class="logo">
+        <div class="product-title">
+            <h1>Our Products</h1>
+            <hr>
+        </div>
+    </section>
+   
+    <!-- Sidenavbar -->
+    <div id="sidebar">
+        <nav>
+            <h1>TropiqEden</h1>
+            <ul>
+                <li><a href="index.html#header">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#gallery-page">Gallery</a></li>
+                <li><a href="index.html#testimonial">Testimonials</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <hr>
+            <footer class="sidefooter" id="footerside">
+                <div class="container-fluid">
+                  <i class="social-icon fab fa-twitter"></i>
+                  <i class="social-icon fab fa-facebook-f"></i>
+                  <i class="social-icon fab fa-instagram"></i>
+                  <i class="social-icon fas fa-envelope"></i>
+                  <div class="copyright-title">
+                    <div>
+                        <p>© Copyright 2023</p>
+                    </div>
+                     <div>
+                        <p> TropiqEden</p>
+                    </div>
+                 </div>
+                </div>
+            </footer>
+        </nav>
+    </div>
+
+    
+    <div id="menubtn">
+        <img src="/Project/images/hamburger.png">
+    </div>
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidebar = document.getElementById("sidebar")
+        var menu = document.getElementById("menu")
+
+        menubtn.onclick = function (){
+            if(sidebar.style.right == "-250px"){
+                sidebar.style.right="0"; 
+                menu.src="/Project/images/x-button.png";                
+            }
+            else{
+                sidebar.style.right= "-250px";
+                menu.src="/Project/images/hamburger.png"; 
+               
+            }
+        }
+    </script> 
+
+    <div class="small-container">
+        <h2>Featured Products</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/closed terrarium.jpg" alt="product1">
+                <h3>The Perfect One</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i>               
+                 </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/open terrarium.jpg" alt="product2">
+                <h3>Starter Terrarium</h3>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i>
+                </div>
+                <p>$10.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/desert terrarium.jpg" alt="product3">
+                <h3>Absolute Desert</h3>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <p>$70.00</p>
+            </div>
+        </div>
+
+        <h2 class="title">New Products</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/mini succulent.jpg" alt="product1">
+                <h3>Angel in a dome</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i>              
+                </div>
+                <p>$60.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/deserthome.jpg" alt="product2">
+                <h3>Desert Paradise</h3>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            <div class="col-3">
+                <img src="images/moss terrarium.jpg" alt="product6">
+                <h3>Slumber night</h3>
+                <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+<section id="footer">
+    <div class="title-text">
+        <p> Contact Us</p>
+        <h1> Visit us today</h1>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h2>Opening hours</h2>
+                <p><i class="fa-sharp fa-solid fa-clock"></i> Monday to Satuday - 10am to 9pm</p>
+                <p><i class="fa-sharp fa-solid fa-clock"></i> Sunday - 10am-7pm</p>
+            </div>
+            <div class="footer-right">
+                <h2>Get in touch</h2>
+                <p><i class="fa-sharp fa-solid fa-location-dot"> </i> 123 Punggol rd, #03-11 Singapore 820123</p>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i> TropiqEden94@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> +65-91234567</p>
+            </div>
+        </div>
+</section>
+
+<div class="social-links">
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-facebook-f"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-envelope"></i>
+    <p>© Copyright 2023 TropiqEden</p>
+</div>
+    
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

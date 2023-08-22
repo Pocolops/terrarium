@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrarium</title>
+    <!-- bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&display=swap" rel="stylesheet">
+    <!-- css styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/1ba811e13a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Mainpage -->
+    <section id="header">
+        <img src="images/logo3.png" class="logo">
+            <div class="header-title">
+                <h1> TropiqEden</h1>
+                <p>Bringing miniature worlds to life in your own space</p>
+            </div>
+            <div class="headerBtn">
+                <a href="products.html"><span></span>Shop</a>
+                <a href="booking.html"><span></span>Workshop</a>
+            </div>
+    </section>
+
+   
+    <!-- Sidenavbar position should be fixed --->
+    <div id="sidebar">
+        <nav>
+            <h1>TropiqEden</h1>
+            <ul>
+                <!-- sidebar nav link to different section -->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery-page">Gallery</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <hr>
+                <footer class="sidefooter" id="footerside">
+                    <div class="container-fluid">
+                        <i class="social-icon fab fa-twitter"></i>
+                        <i class="social-icon fab fa-facebook-f"></i>
+                        <i class="social-icon fab fa-instagram"></i>
+                        <i class="social-icon fas fa-envelope"></i>
+                        <div class="copyright-title">
+                            <div>
+                                <p>© Copyright 2023</p>
+                            </div>
+                            <div>
+                            <p> TropiqEden</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+        </nav>
+    </div>
+
+    <!-- hamburger icon to navigate the webpage -->
+    <div id="menubtn">
+        <img src="./images/hamburger.png">
+    </div>
+
+    <!-- menu button transition -->
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidebar = document.getElementById("sidebar")
+        var menu = document.getElementById("menu")
+
+        menubtn.onclick = function (){
+            if(sidebar.style.right == "-250px"){
+                sidebar.style.right="0"; 
+            }
+            else{
+                sidebar.style.right= "-250px";  
+            }
+        }
+    </script>
+
+
+
+
+<!--=====================features========================= -->
+
+    <section id="features">
+        <div class="title-text">
+            <p>Features</p>
+            <h1>Why Choose Us</h1>
+        </div>
+<!-- feature container, "text and image" -->
+        <div class="feature-box">
+
+            <div class="feature">
+                <!-- 3 features of the company, with icons from fontawesome -->
+                    <h1> Timely delivery.</h1>
+                    <div class="feature-description">
+                        <div class="feature-icon">
+                            <i class="fa-sharp fa-solid fa-truck"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>We prioritize quick shipping to ensure you receive your terrarium on time.</p>
+                        </div>
+                    </div>
+
+                    <h1> Excellent services</h1>
+                    <div class="feature-description">
+                        <div class="feature-icon">
+                            <i class="fa-sharp fa-solid fa-bell-concierge"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>Our commitment to customer satisfaction means that we are always striving to exceed your expectations.</p>
+                        </div>
+                    </div>
+
+                    <h1> Build with us</h1>
+                    <div class="feature-description">
+                        <div class="feature-icon">
+                            <i class="fa-sharp fa-solid fa-trowel"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>Join us for an immersive terrarium workshop and learn the art of creating your own stunning terrarium.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-img">
+                    <img src="images/feature img.jpg">
+                    <!-- add overlay effect -->
+                    <div class="feature-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!--====================== gallery======================== -->
+    <section class="gallery" id="gallery-page">
+        <div class="title-text">
+            <p> Gallery</p>
+            <h1>Terrariums</h1>
+        </div>
+
+        <div class="gallery-box">
+            <!-- adding 4 images in a div, each image has its own div -->
+            <div class="single-item">
+                <img src="images/closed terrarium.jpg">
+            <!-- overlay to add gradient colors over imgage -->
+                <div class="overlay"></div>
+                <div class="product-text">
+                    <h3>Closed Terrarium</h3>
+                    <hr>
+                    <p>These are sealed environments that are perfect for plants that thrive in high humidity levels. Closed terrariums require less watering and can create a self-sustaining ecosystem.</p>
+                </div>
+            </div>
+    
+            <div class="single-item">
+                <img src="images/open terrarium.jpg">
+                <div class="overlay"></div>
+                <div class="product-text">
+                    <h3>Open Terrarium</h3>
+                    <hr>
+                    <p>These terrariums do not have a lid and require regular watering and air circulation.</p>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <img src="images/desert terrarium.jpg">
+                <div class="overlay"></div>
+                <div class="product-text">
+                <h3>Desert Terrarium</h3>
+                <hr>
+                <p>These terrariums contain plants that are adapted to dry, arid environments, such as cacti and succulents.</p>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <img src="images/moss terrarium.jpg">
+                <div class="overlay"></div>
+                <div class="product-text">
+                <h3>Moss Terrarium</h3>
+                <hr>
+                <p>These terrariums are filled with various species of moss, which can grow in a variety of environments.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Testimonial -->
+    <section class="testimonialpage" id="testimonial">
+        <div class="title-text">
+            <p> Testimonial</p>
+            <h1> What our customers say</h1>
+        </div>
+
+        <div class="testimonial-row">
+
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="images/testimonial1.jpg">
+                    <div class="user-info">
+                        <h4>Emily.S<i class="fa fa-twitter"></i></h4>
+                        <small>@emilyendd</small>
+                    </div>
+                </div>
+                <p>"I am absolutely in love with my TropiqEden terrarium! The team was so helpful in helping me choose the perfect design for my space, and the final product is even more beautiful than I could have imagined. I get so many compliments on it and it brings a sense of calm to my home. Thank you TropiqEden!"</p>
+            </div>
+
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="images/testimonial2.jpg">
+                    <div class="user-info">
+                        <h4>Ava.T<i class="fa fa-twitter"></i></h4>
+                        <small>@Avatumble</small>
+                    </div>
+                </div>
+                <p>"I attended one of TropiqEden's terrarium workshops and had the best time! Michael was a fantastic instructor and guided us through the process step-by-step. I was amazed at how easy it was to create my own terrarium, and it has been thriving in my home ever since. I highly recommend TropiqEden's workshops to anyone who loves plants!"</p>
+            </div>
+
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="images/testimonial3.jpg">
+                    <div class="user-info">
+                        <h4>Melody.L<i class="fa fa-twitter"></i></h4>
+                        <small>@mellosmello</small>
+                    </div>
+                </div>
+                <p>"I have purchased several terrariums from TropiqEden over the years and have always been impressed with the quality and craftsmanship. The team is always so helpful in answering my questions and ensuring that I am completely satisfied with my purchase. I highly recommend TropiqEden to anyone looking for a beautiful and unique terrarium!"</p>
+            </div>
+        </div>
+    </section>
+
+<!-- footer -->
+    <section id="footer">
+        <div class="title-text">
+            <p> Contact Us</p>
+            <h1> Visit us today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h2>Opening hours</h2>
+                <p><i class="fa-sharp fa-solid fa-clock"></i> Monday to Satuday - 10am to 9pm</p>
+                <p><i class="fa-sharp fa-solid fa-clock"></i> Sunday - 10am-7pm</p>
+            </div>
+            <div class="footer-right">
+                <h2>Get in touch</h2>
+                <p><i class="fa-sharp fa-solid fa-location-dot"> </i>123 Punggol rd, #03-11 Singapore 820123</p>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i> TropiqEden@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>   +65-91234567</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-links">
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-envelope"></i>
+        <p>© Copyright 2023 TropiqEden</p>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

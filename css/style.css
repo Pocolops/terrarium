@@ -1,0 +1,830 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Quattrocento', serif;
+}
+
+h1, h2, h4{
+    font-family: 'Quattrocento', serif;
+    color:#7ab68f;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* ========splash page========= */
+
+/* background-image added in css instead of html */
+#header{
+    background:linear-gradient(rgba(0,0,0,0.5),#b7f3cc), url("../images/mainimage.jpg");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+}
+
+.logo{
+    top:2%;
+    left:2%;
+    width:140px;
+    position:absolute;
+}
+
+/* header text font sizing */
+.header-title{
+    text-align:center;
+    padding-top: 200px;
+}
+.header-title h1{
+    color:white;
+    font-size: 150px;
+    font-weight:50;
+    font-family: 'Quattrocento', serif;
+    padding-bottom:20px;
+}
+.header-title p{
+    color:white;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Fanwood Text', serif;
+}
+
+
+/* header button "shop" & "workshop" */
+.headerBtn{
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.headerBtn a{
+    width:150px;
+    text-decoration: none;
+    display:inline-block;
+    margin:0 10px;
+    padding: 12px 0;
+    color:white;
+    border:0.7px solid white;
+    border-radius: 7px;;
+    position: relative;
+    z-index: 1;
+    transition: color 1s;
+}
+
+/* added a span as a second layer over the orignal button, added transition time as we hover */
+.headerBtn a span{
+    width:0;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(rgba(208, 159, 44, 0.9),#b7f3cc);
+    z-index: -1;
+    transition: 1s;
+    opacity: 0.4;
+    border-radius: 7px;
+
+}
+
+/* Span hover */
+.headerBtn a:hover span{
+    width:100%;
+}
+
+/* button text hover effects */
+.headerBtn a:hover{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================ sidebar =================== */
+
+/* sidebar fixed into position */
+#sidebar{
+    width:250px;
+    height:100vh;
+    position:fixed;
+    top:0;
+    right:-250px;
+    background:#7ab68f;
+    z-index: 2;
+    transition:0.5s;
+}
+#sidebar h1{
+    color:white;
+    font-family: 'Quattrocento', serif;
+    margin: 50px 20px;
+}
+/* removing the <ul> "dots" */
+nav ul li{
+    list-style: none;
+    margin:50px 20px;
+}
+
+/* individual nav bar */
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+nav ul li a:hover{
+    color:#a9907e
+}
+
+
+#menubtn{
+    width:50px;
+    height:50px;
+    background-color:#b7f3cc;
+    text-align:center;
+    position:fixed;
+    right:30px;
+    top:20px;
+    border-radius: 7px;
+    z-index: 3;
+    cursor:pointer;
+}
+#menubtn img{
+    width:20px;
+    margin-top: 15px;
+}
+
+/* sidenav small footer */
+#footerside{
+    text-align: center;
+  }
+  .social-icon{
+    margin: 20px 10px 10px;
+  }
+
+  .copyright-title{
+    margin:2px;
+    display:inline;
+  }
+
+
+/* adjust text and font accordingly when screen size is decreased*/
+ @media screen and (max-width:1080px){
+    .header-title h1{
+        font-size:80px;
+        font-weight:500;
+    }
+    .header-title p{
+        font-size:20px;
+    }
+    .header-btn a{
+        display:block;
+        margin:20px auto;
+    }
+}
+
+
+/* ===========================Features======================== */
+
+/* learnt flex at this point experimenting with feature section */
+#features{
+    width:100%;
+    padding:70px 0;
+}
+
+/* feature text adjustment */
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p {
+    margin: auto;
+    font-size:20px;
+    color:#a9907e;
+    font-weight:bold;
+}
+.title-text h1{
+    font-size:50px;
+}
+
+/* feature box text */
+.feature-box{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    text-align: center;
+    
+}
+.feature{
+    flex-basis:50%;
+
+}
+.feature-img{
+    flex-basis: 50%;
+    margin:auto;
+    position:relative;
+}
+.feature-img img{
+    width:70%;
+    border-radius: 10px;
+    
+}
+/* colour linear-gradient over image applied */
+.feature-overlay{
+    width:70%;
+    height:100%;
+    left:15%;
+    position:absolute;
+    top:0;
+    border-radius: 7px;
+    background: linear-gradient(rgba(0,0,0,0),#b7f3cc);
+    opacity:1
+}
+
+.feature h1{
+    text-align:left;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.feature-description{
+    display:flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.feature-icon i{
+    width: 50px;
+    height:50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;;
+    color:#7ab68f;
+    border:2px solid;
+}
+
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width:1080px){
+    .title-text h1{
+        font-size:35;
+    
+    }
+    .feature{
+        flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 200%;
+    }
+    .feature-img img{
+        width:100%
+    }
+    .feature-overlay{
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        border-radius: 7px;
+        background: linear-gradient(rgba(0,0,0,0),#b7f3cc);
+        opacity:1;
+        
+    }
+}
+
+
+
+
+
+/* ===============Gallery================== */
+#gallery{
+    width: 100%;
+    padding:70px auto;
+    background:white;
+}
+
+.gallery p{
+    margin: auto;
+    font-size:20px;
+    color:#a9907e;
+    font-weight:bold;
+}
+
+.gallery-box{
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.single-item{
+    flex-basis:48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color:white;
+    position: relative;
+}
+
+.single-item img{
+    width:100%;
+    border-radius: 7px;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(208, 159, 44, 0.9),#b7f3cc);
+    opacity: 0;
+    transition:1s;
+
+}
+.single-item:hover .overlay{
+    opacity: 1;
+
+}
+
+
+.product-text{
+    width:80%;
+    position:absolute;
+    bottom: 0;
+    left:50%;
+    opacity:0;
+    transition: 1s;
+    transform: translatex(-50%);
+}
+.product-text h3{
+    font-size:23px;
+}
+.product-text p{
+    font-size: 18px;
+    color:white;
+}
+
+hr{
+    background:white;
+    height: 2px;
+    border:0;
+    margin:15px auto;
+    width:50%;
+}
+
+.single-item:hover .product-text{
+    bottom:40%;
+    opacity:1;
+}
+
+@media screen and (max-width:1080px){
+    .single-item{
+        flex-basis: 100%;
+        margin: 30px auto;
+    }
+    .product-text{
+        top:20%;
+    }
+    .product-text p{
+        font-size: 15px;
+        
+    }
+    hr{
+        margin:5px auto;
+    }
+}
+
+/* Testimonial */
+
+
+#testimonial{
+    width: 100%;
+    padding:70px auto;
+}
+.testimonial-row{
+    width:80%;
+    margin:auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col{
+    flex-basis:28%;
+    padding:10px;
+    margin-bottom:30px;
+    border-radius:5px;
+    box-shadow:0 10px 20px 3px #04494214;
+    cursor: pointer;
+}
+.testimonial-col p{
+    font-size: 20px;
+}
+.user{
+    display:flex;
+    align-items:center;
+    margin:20px 0;
+
+}
+
+.user img{
+    width: 50px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
+.user-info .fa{
+    margin-left:10px;
+    color:rgb(5, 126, 247);
+    font-size:15px;
+}
+
+
+@media screen and (max-width: 1080px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+    
+
+}
+/*============== footer====================== */
+
+#footer{
+    padding:50px 0 10px;
+    background-color:#e1d0b3;
+}
+.footer-row{
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left, .footer-right{
+    flex-basis:45%;
+    padding: 10px;
+    margin-bottom: 20px;
+} 
+.footer-left{
+    text-align:left;
+}
+
+.footer-right{
+    text-align:right;
+}
+.footer-row h1{
+    margin:10px 0;
+}
+.footer-row p {
+    line-height:35px;
+}
+
+.footer-left .fa,.footer-right .fa{
+    font-size:20px;
+    margin:10px;
+}
+.social-links{
+    text-align:center;
+}
+.social-links .fa{
+    height:40px;
+    width:40px;
+    font-size:20px;
+    line-height:40px;
+    border:2px solid #7ab68f;
+    margin: 30px 5px 0;
+    color:#7ab68f;
+    cursor:pointer;
+    transition: .5s;
+}
+.social-links .fa:hover{
+    background:#7ab68f;
+    color:white;
+    transform: translateY(-7px);
+}
+.social-links p{
+    margin:10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1080px){
+    .footer-left, .footer-right{
+
+        flex-basis: 100%;
+        font-size:14px;
+    }
+
+}
+/* =======================page 2=================== */
+
+/* Product page */
+.product-title{
+    text-align:center;
+    padding-top:120px;
+
+}
+.product-title h1{
+    font-size: 50px;
+    font-family: 'Quattrocento', serif;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.small-container{
+    max-width:1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container h2{
+    flex-basis:30%;
+    font-size: 30px;
+    text-align: center;
+    color:#daba84;
+}
+.col-3{
+    flex-basis:30%;
+    padding:10px;
+    min-width:300px;
+    margin-bottom:20px;
+    transition:transform(0.5s);
+}
+.col-3 img{
+    width:100%;
+    
+}
+.col-3 h3{
+    color:#a9907e;
+    font-family: 'Quattrocento', serif;
+
+}
+.col-3 p{
+    color:#a9907e;
+    font-family:'Fanwood Text', bold;
+    font-size: 25px;
+}
+.rating{
+    color:#7ab68f
+}
+.col-3:hover{
+    transform:translateY(-5px);
+}
+
+@media screen and (max-width: 1080px){
+    .small-container{
+        flex-basis:100%;
+    }
+    .col-3{
+        width:100%;
+
+    }
+
+}
+/* ========================page 3=============== */
+
+/* booking page */
+#banner-book{
+    background:linear-gradient(rgba(0,0,0,0.5),#b7f3cc), url("../images/mainimage.jpg");
+    background-size:cover;
+    background-position:center;
+    height:140vh;
+}
+
+
+.booking{
+    text-align:center;
+    padding-top:120px;
+
+}
+.booking h1{
+    font-size: 60px;
+    font-family: 'Quattrocento', serif;
+    color:white;
+}
+.booking p{
+    font-family:'Fanwood Text', bold;
+    font-size: 20px;
+    color:white;
+}
+
+/* main booking container */
+.book-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+/* booking contact info */
+.book-container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+.book-container .contactInfo .box{
+    position:relative;
+    padding:40px 0;
+    display:flex;
+
+}
+
+
+.book-container .contactInfo .box .icon{
+    min-width:60px;
+    height:60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 25px;
+}
+.book-container .contactInfo .box .text{
+    display:flex;
+    margin-left:20px;
+    font-size:18px;
+    color:white;
+    flex-direction: column;
+    font-weight:500;
+}
+.book-container .contactInfo .box .text h3{
+    font-weight:900;
+    color:#b7f3cc;
+}
+
+
+/* contact form */
+.contactForm{
+    width:40%;
+    padding:20px;
+    background:linear-gradient(rgba(113, 98, 98, 0.9),#b7f3cc);
+    font-weight:500;
+}
+.contactForm .inputBox{
+    position:relative;
+    width:100%;
+    margin-top:20px;
+}
+.contactForm .inputBox input{
+    width:100%;
+    padding:5px 0;
+    font-size: 20px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid white;
+    outline:none;
+
+}
+@media screen and (max-width: 1080px){
+    .contact{
+        padding:20px 0 80px;
+    }
+    .contactForm{
+        width:50%;
+    }
+    .book-container{
+        flex-direction: column;
+    }
+
+}  
+/* ================page 4================== */
+
+/* about us */
+
+.about-title{
+    text-align:center;
+    padding-top:120px;
+    
+}
+.about-title h1{
+    font-size: 60px;
+    font-family: 'Quattrocento', serif;
+    color:#7ab68f;
+}
+.about-title p{
+    font-family:'Fanwood Text', bold;
+    font-size: 20px;
+    color:#a9907e;
+    display:flex;
+    padding:20px;
+    text-align: center;
+}
+
+.team{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+.team-img{
+    width:50%;
+    padding:10px;
+}
+.team-img img{
+    height:auto;
+    width:100%;
+    
+}
+
+.team-text{
+    width:50%;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+.team-text h2{
+    font-size:80px;
+    font-family: 'Quattrocento', serif;
+}
+.team-text p {
+    font-size:18px;
+    font-family:'Fanwood Text', bold;
+    color:#a9907e;
+
+}
+
+@media screen and (max-width: 1080px){
+    .team{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-img, .team-text{
+        width:80%;
+    }
+}
+
+
+
+/* test style not used in final product.*/
+
+/* .team{
+    width:100%;
+    margin:10px; 
+    display:flex;
+    justify-content: space-around;
+}
+
+.team img{
+    width:50%;
+}
+.team-text{
+    width:50%;
+}
+
+.team-text h2{
+    font-size:60px;
+    font-family: 'Quattrocento', serif;
+}
+.team-text p{
+    font-size:20px;
+    color:#a9907e;
+    font-family:'Fanwood Text', bold;
+}
+
+@media screen and (max-width: 1080px){
+    .team{
+
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+} */
+
+
+
+
+
+
+
